@@ -1,42 +1,6 @@
-DevPulse Issue Manager
-
-DevPulse is a backend REST API built for managing software issues like bugs and feature requests. It is developed using Node.js, Express, TypeScript, PostgreSQL, and secured with JWT authentication. The system also includes role-based access control (RBAC) for better permission handling.
-
-🌐 Live API
-
-https://dev-pulse-issue-mang.vercel.app/
-
-**Tech Stack**
-Node.js
-Express.js
-TypeScript
-PostgreSQL
-JWT (authentication)
-bcrypt (password hashing)
-dotenv
-
-**Key Features**
-User registration and login system with JWT
-Secure authentication and password hashing
-Role-based access control (Contributor & Maintainer)
-Full CRUD operations for issues
-Ability to track bugs and feature requests
-Protected routes for sensitive operations
-PostgreSQL database integration with structured schema
-
-**Authentication Routes**
-POST /api/auth/signup → Create a new user account
-POST /api/auth/login → Login user and receive JWT token
-** Issue Management Routes**
-POST /api/issues → Create a new issue (requires login)
-GET /api/issues → Retrieve all issues
-GET /api/issues/:id → Get details of a single issue
-PUT /api/issues/:id → Update an issue (role-based access)
-DELETE /api/issues/:id → Delete an issue (maintainer only)
-
 DevPulse – Issue Tracker API
 
-DevPulse is a backend REST API built for managing software issues like bugs and feature requests. It is developed using Node.js, Express, TypeScript, PostgreSQL, and secured with JWT authentication. The system also includes role-based access control (RBAC) for better permission handling.
+DevPulse is a backend REST API for managing bugs and feature requests. It is built with Node.js, Express, TypeScript, PostgreSQL, and uses JWT authentication with role-based access control.
 
 🌐 Live API
 
@@ -47,58 +11,24 @@ Node.js
 Express.js
 TypeScript
 PostgreSQL
-JWT (authentication)
-bcrypt (password hashing)
-dotenv
-🚀 Key Features
-User registration and login system with JWT
-Secure authentication and password hashing
-Role-based access control (Contributor & Maintainer)
-Full CRUD operations for issues
-Ability to track bugs and feature requests
-Protected routes for sensitive operations
-PostgreSQL database integration with structured schema
-🔐 Authentication Routes
-POST /api/auth/signup → Create a new user account
-POST /api/auth/login → Login user and receive JWT token
-🐛 Issue Management Routes
-POST /api/issues → Create a new issue (requires login)
-GET /api/issues → Retrieve all issues
-GET /api/issues/:id → Get details of a single issue
-PUT /api/issues/:id → Update an issue (role-based access)
-DELETE /api/issues/:id → Delete an issue (maintainer only)
-👥 User Roles
-🧑 Contributor
-Can register and log in
-Can create and view issues
-Can update only their own open issues
-🛠 Maintainer
-Full access to all issues
-Can update or delete any issue
-Controls issue workflow and status
+JWT Authentication
+bcrypt
+🚀 Features
+User signup & login with JWT
+Role-based access (Contributor / Maintainer)
+Create, read, update, delete issues
+Secure password hashing
+PostgreSQL database integration
+🔐 Auth Routes
+POST /api/auth/signup – Register user
+POST /api/auth/login – Login & get token
+🐛 Issue Routes
+POST /api/issues – Create issue (auth required)
+GET /api/issues – Get all issues
+GET /api/issues/:id – Get single issue
+PUT /api/issues/:id – Update issue (role-based)
+DELETE /api/issues/:id – Delete issue (maintainer only)
+👥 Roles
 
-
-**Database Overview**
-Users Table
-Stores user information such as name, email, encrypted password, role, and timestamps.
-
-Issues Table
-Stores issue data including title, description, type (bug/feature), status, reporter ID, and timestamps.
-
-**Contributor**
-Can register and log in
-Can create and view issues
-Can update only their own open issues
-🛠 Maintainer
-Full access to all issues
-Can update or delete any issue
-Controls issue workflow and status
-
-** Database Overview**
-Users Table
-
-Stores user information such as name, email, encrypted password, role, and timestamps.
-
-Issues Table
-
-Stores issue data including title, description, type (bug/feature), status, reporter ID, and timestamps.
+Contributor: create & manage own issues
+Maintainer: manage all issues
