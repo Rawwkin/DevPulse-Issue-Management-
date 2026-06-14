@@ -3,12 +3,13 @@ import { issueService } from "./issue.service";
 
 const createIssue = async (req: Request, res: Response) => {
 
+
   const reporter_id = (req as any).user.id;
   try {
-    const result = await issueService.createIssue(reporter_id, req.body);
+    const result = await issueService.createIssueService(reporter_id, req.body);
     res.status(201).json({
       success: true,
-      message: "Issue successfully created",
+      message: "Issue created successfully",
       data: result,
     });
   } catch (error: any) {
@@ -20,11 +21,13 @@ const createIssue = async (req: Request, res: Response) => {
   }
 };
 
+
+
 const getAllIssues = async (req: Request, res: Response) => {
   try {
     const filters = req.query;
 
-    const result = await issueService.getAllIssue(filters);
+    const result = await issueService.getAllIssuesService(filters);
 
     res.status(200).json({
       success: true,
@@ -39,10 +42,11 @@ const getAllIssues = async (req: Request, res: Response) => {
   }
 };
 
+
 const getSingleIssue = async (req: Request, res: Response) => {
   const { id } = req.params;
   try {
-    const result = await issueService.getSingleIssue(id as string);
+    const result = await issueService.getSingleIssueService(id as string);
     if (result.rows.length === 0) {
       res.status(404).json({
         success: false,
@@ -68,7 +72,7 @@ const updateIssue = async (req: Request, res: Response) => {
   const id = (req as any).req.params.id;
 
   try {
-    const result = await issueService.updateIssue(
+    const result = await issueService.updateIssueService(
       req.body,
       id,
       (req as any).req.user,
@@ -91,7 +95,7 @@ const deleteIssue = async (req: Request, res: Response) => {
   const { id } = req.params;
 
   try {
-    const result = await issueService.deleteIssue(id as string);
+    const result = await issueService.deleteIssueService(id as string);
     if (result.rowCount === 0) {
       res.status(404).json({
         success: false,
@@ -110,6 +114,7 @@ const deleteIssue = async (req: Request, res: Response) => {
     });
   }
 };
+
 export const issueController = {
   createIssue,
   getAllIssues,

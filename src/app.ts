@@ -30,7 +30,7 @@ app.get("/", (req: Request, res: Response) => {
   });
 
 app.use("/api/auth", authRoute);
-app.use("/appi/issues",issueRoute);
+app.use("/api/issues",issueRoute);
 
 app.use(globalErrorHandler);
 
