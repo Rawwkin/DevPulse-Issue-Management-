@@ -12,12 +12,12 @@ const auth = (...roles: ROLES[]) => {
         const token = req.headers.authorization;
 
         if(!token) {
-            res.status(403).json({
+            return res.status(403).json({
                 success : false, 
                 message : "Unauthorized access!!"
             })
         }
-
+        
         const decoded = jwt.verify(token as string, config.secret as string) as JwtPayload;
         
         const userData = await pool.query(`
@@ -42,7 +42,7 @@ const auth = (...roles: ROLES[]) => {
           message: "Valid token but insufficient role/permissions",
         });
       }
-
+      console.log("Authorization:", req.headers.authorization);
       next();
 
       } 

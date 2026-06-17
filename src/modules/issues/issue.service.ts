@@ -7,8 +7,8 @@ const createIssueService = async (reporter_id: number, payload: IIssue) => {
 
   const result = await pool.query(
     `
-    INSERT INTO issues (reporter_id, title, type, description,status)
-    VALUES ($1, $2, $3, $4,$5)
+    INSERT INTO issues (reporter_id, title, type, description,status )
+    VALUES ($1, $2, $3, $4, COALESCE($5 ,'open'))
     RETURNING *
     `,
     [reporter_id, title, type, description, status],
@@ -115,6 +115,7 @@ const deleteIssueService = async (id: string) => {
   const result = await pool.query(
     `
     DELETE FROM issues WHERE id=$1  
+    RETURNING *
       `,
     [id],
   );

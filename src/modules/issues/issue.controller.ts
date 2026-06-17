@@ -69,12 +69,12 @@ const getSingleIssue = async (req: Request, res: Response) => {
 };
 
 const updateIssue = async (req: Request, res: Response) => {
-  const id = (req as any).req.params.id;
+  const id = req.params.id;
 
   try {
     const result = await issueService.updateIssueService(
       req.body,
-      id,
+      id as string,
       (req as any).req.user,
     );
 

@@ -78,3 +78,131 @@ Method -> GET - Time -> 1781446242579 - URL -> /
 Method -> GET - Time -> 1781446249108 - URL -> //api/issues?sort=newest
 
 Method -> GET - Time -> 1781446277235 - URL -> //api/issues/1
+
+Method -> GET - Time -> 1781692872269 - URL -> /
+
+Method -> GET - Time -> 1781692873442 - URL -> /favicon.ico
+
+Method -> GET - Time -> 1781692887976 - URL -> /api/auth
+
+Method -> GET - Time -> 1781692889338 - URL -> /api/auth
+
+Method -> GET - Time -> 1781692897274 - URL -> /api/auth/signup
+
+Method -> GET - Time -> 1781693028604 - URL -> /api/auth/login
+
+Method -> GET - Time -> 1781693045137 - URL -> /api/auth/login/
+
+Method -> GET - Time -> 1781693061486 - URL -> /api/auth/signup/
+
+Method -> GET - Time -> 1781693350659 - URL -> /api//api/issues
+
+Method -> GET - Time -> 1781693368428 - URL -> /api//api/issues/1
+
+Method -> POST - Time -> 1781693400772 - URL -> /%20/api/issues
+
+Method -> GET - Time -> 1781693449033 - URL -> /api/issues
+
+Method -> POST - Time -> 1781693493264 - URL -> /api/issues
+
+Method -> GET - Time -> 1781693689031 - URL -> /api/issues/1
+
+Method -> POST - Time -> 1781694022711 - URL -> /api/auth/signup
+
+Method -> GET - Time -> 1781694059325 - URL -> /api/auth/login
+
+Method -> GET - Time -> 1781694075797 - URL -> /api/auth/login
+
+Method -> GET - Time -> 1781694148417 - URL -> /api/login
+
+Method -> GET - Time -> 1781694180665 - URL -> /api/auth/login
+
+Method -> POST - Time -> 1781694216633 - URL -> /api/auth/login
+
+Method -> POST - Time -> 1781694293305 - URL -> /api/issues
+
+Method -> POST - Time -> 1781694325464 - URL -> /api/issues
+
+Method -> POST - Time -> 1781694581193 - URL -> /api/issues
+
+Method -> POST - Time -> 1781694588503 - URL -> /api/issues
+
+Method -> GET - Time -> 1781695538679 - URL -> /api/issues/1
+
+Method -> GET - Time -> 1781695543022 - URL -> /api/issues
+
+Method -> GET - Time -> 1781695565604 - URL -> /api/auth
+
+Method -> GET - Time -> 1781695569794 - URL -> /api/auth/login
+
+Method -> POST - Time -> 1781695623556 - URL -> /api/issues
+
+Method -> POST - Time -> 1781695798553 - URL -> /api/issues
+
+Method -> POST - Time -> 1781695807161 - URL -> /api/issues
+
+Method -> POST - Time -> 1781696258105 - URL -> /api/issues
+
+Method -> GET - Time -> 1781696403693 - URL -> /api/issues
+
+Method -> GET - Time -> 1781696468802 - URL -> /api/issues?sort=newest
+
+Method -> GET - Time -> 1781696535051 - URL -> /api/issues?sort=oldest
+
+Method -> POST - Time -> 1781696597586 - URL -> /api/auth/signup
+
+Method -> POST - Time -> 1781696615649 - URL -> /api/auth/login
+
+Method -> POST - Time -> 1781696627761 - URL -> /api/issues?sort=newest
+
+Method -> POST - Time -> 1781696692696 - URL -> /api/issues
+
+Method -> POST - Time -> 1781696704301 - URL -> /api/issues
+
+Method -> POST - Time -> 1781696712819 - URL -> /api/issues
+
+Method -> POST - Time -> 1781696715839 - URL -> /api/issues
+
+Method -> POST - Time -> 1781696733411 - URL -> /api/issues
+
+Method -> POST - Time -> 1781696789980 - URL -> /api/auth/login
+
+Method -> POST - Time -> 1781696793674 - URL -> /api/auth/login
+
+Method -> POST - Time -> 1781696832373 - URL -> /api/issues
+
+Method -> POST - Time -> 1781696855102 - URL -> /api/issues
+
+Method -> POST - Time -> 1781696886822 - URL -> /api/issues
+
+Method -> POST - Time -> 1781696931308 - URL -> /api/issues
+
+Method -> GET - Time -> 1781696967973 - URL -> /api/issues?sort=oldest
+
+Method -> GET - Time -> 1781696976321 - URL -> /api/issues
+
+Method -> GET - Time -> 1781696977769 - URL -> /api/issues/1
+
+Method -> GET - Time -> 1781696979096 - URL -> /api/issues/13
+
+Method -> GET - Time -> 1781696995634 - URL -> /api/issues/1
+
+Method -> GET - Time -> 1781696996101 - URL -> /api/issues
+
+Method -> GET - Time -> 1781697003657 - URL -> /api/issues/1
+
+Method -> GET - Time -> 1781697004541 - URL -> /api/issues/12
+
+Method -> POST - Time -> 1781697313619 - URL -> /api/auth/signup
+
+Method -> POST - Time -> 1781697340344 - URL -> /api/auth/login
+
+Method -> POST - Time -> 1781697378821 - URL -> /api/issues
+
+Method -> PATCH - Time -> 1781697537466 - URL -> /api/issues/12
+
+Method -> PATCH - Time -> 1781697549664 - URL -> /api/issues/12
+
+Method -> POST - Time -> 1781697601540 - URL -> /api/issues/1
+
+Method -> PATCH - Time -> 1781697720901 - URL -> /api/issues/14
