@@ -206,3 +206,7 @@ Method -> PATCH - Time -> 1781697549664 - URL -> /api/issues/12
 Method -> POST - Time -> 1781697601540 - URL -> /api/issues/1
 
 Method -> PATCH - Time -> 1781697720901 - URL -> /api/issues/14
+
+Method -> GET - Time -> 1781703754048 - URL -> /api/issues
+
+Method -> GET - Time -> 1781703754831 - URL -> /favicon.ico
